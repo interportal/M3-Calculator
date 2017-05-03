@@ -16,7 +16,7 @@
 	<div class="container">
 		<jsp:include page="./header.jspf" />
 
-		<spring:form action="${pageContext.request.contextPath}/" method="post" modelAttribute="calculator">
+		<spring:form action="${pageContext.request.contextPath}/calculator" method="post" modelAttribute="calculator">
 
 			<div class="form-group">
 				<label for="firstNumber">First Number</label> 

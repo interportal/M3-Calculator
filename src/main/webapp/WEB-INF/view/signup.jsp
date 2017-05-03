@@ -34,7 +34,7 @@
 								<label>Last Name</label> 
 								<spring:input type="text" path="lastName"
 									placeholder="Enter Last Name Here.." class="form-control"/>
-								
+								<spring:errors path="lastName" cssClass="alert alert-danger" element="div"/>
 							</div>
 						</div>
 						
@@ -46,7 +46,7 @@
 						
 						<div class="form-group">
 							<label>Password</label> 
-							<spring:input type="text" path="password"
+							<spring:input type="password" path="password"
 								placeholder="Enter Password Here.." class="form-control"/>
 						</div>
 						
@@ -58,7 +58,7 @@
 
 						<div class="form-group">
 							<label>Phone Number</label> 
-							<spring:input type="text" path="phoneNumber"
+							<spring:input type="text" path="phone"
 								placeholder="Enter Phone Number Here.." class="form-control"/>
 						</div>
 						

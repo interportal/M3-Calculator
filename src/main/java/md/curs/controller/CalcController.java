@@ -12,7 +12,7 @@ import md.curs.model.Calculator;
 import md.curs.service.CalcService;
 
 @Controller
-@RequestMapping(value = "/")
+@RequestMapping(value = "/calculator")
 public class CalcController {
 	
 	@Autowired
