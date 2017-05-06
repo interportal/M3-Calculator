@@ -8,13 +8,23 @@ import org.hibernate.validator.constraints.NotBlank;
 
 public class User {
 
+	private Integer id;
 	private String firstName;
 	private String lastName;
 	private String email;
 	private String password;
 	private String phone;
-	private String age;
+	private Integer age;
 	
+	
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
+
 	@NotBlank(message = "First name can not be blank")
 	public String getFirstName() {
 		return firstName;
@@ -61,12 +71,11 @@ public class User {
 		this.phone = phone;
 	}
 
-	@Pattern(regexp = "[\\s]*[0-9]*[1-9]+", message="Age should be greater than 0")
-	public String getAge() {
+	public Integer getAge() {
 		return age;
 	}
 
-	public void setAge(String age) {
+	public void setAge(Integer age) {
 		this.age = age;
 	}
 }
